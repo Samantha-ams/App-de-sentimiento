@@ -1,0 +1,21 @@
+# FilingLens AI  Python Dependencies
+# Install with: pip install -r requirements.txt
+
+#  Web Framework 
+flask>=3.0.0
+werkzeug>=3.0.0
+
+#  AI / ML 
+transformers>=4.40.0
+torch>=2.2.0           # CPU build; for CUDA, replace with torch==2.2.0+cu121
+accelerate>=0.28.0     # required for device_map="auto"
+sentencepiece>=0.2.0   # needed by Qwen2 tokenizer
+tokenizers>=0.19.0
+
+#  Data Fetching & Parsing 
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=5.1.0            # faster HTML parser for BeautifulSoup
+
+#  Utilities 
+python-dotenv>=1.0.0   # optional  for future .env config

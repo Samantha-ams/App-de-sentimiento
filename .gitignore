@@ -1,0 +1,14 @@
+﻿__pycache__/
+*.py[cod]
+*.pyo
+.env
+.venv/
+venv/
+instance/
+uploads/*
+!uploads/.gitkeep
+*.zip
+.DS_Store
+Thumbs.db
+.huggingface/
+.cache/
