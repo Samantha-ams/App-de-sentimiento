@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FilingLens AI — SEC Financial Intelligence</title>
-  <link rel="stylesheet" href="assets/style.css" />
+  <title>FilingLens AI â€” SEC Financial Intelligence</title>
+  <link rel="stylesheet" href="static/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -32,7 +32,7 @@
       </div>
       <div class="nav-badge">
         <span class="badge-dot"></span>
-        <span>Local AI · Zero Data Sharing</span>
+        <span>Local AI Â· Zero Data Sharing</span>
       </div>
     </div>
   </nav>
@@ -48,7 +48,7 @@
       <div class="hero-eyebrow">
         <span class="eyebrow-chip">
           <i class="fas fa-microchip"></i>
-          Powered by Qwen2-0.5B · 100% Local Inference
+          Powered by Qwen2-0.5B Â· 100% Local Inference
         </span>
       </div>
       <h1 class="hero-title">
@@ -100,13 +100,13 @@
       </div>
       <div class="terminal-body">
         <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">filinglens analyze --ticker AAPL --type 10-K</span></div>
-        <div class="term-line"><span class="term-info">›</span> Fetching latest 10-K from EDGAR…</div>
-        <div class="term-line"><span class="term-info">›</span> Extracted 94,217 words</div>
-        <div class="term-line"><span class="term-info">›</span> Splitting into 28 chunks…</div>
-        <div class="term-line"><span class="term-info">›</span> Running Qwen2-0.5B locally…</div>
-        <div class="term-line term-success"><span class="term-check">✓</span> Sentiment: <strong>Positive</strong> (82% confidence)</div>
-        <div class="term-line term-success"><span class="term-check">✓</span> Analysis complete in 48.3s</div>
-        <div class="term-cursor">▋</div>
+        <div class="term-line"><span class="term-info">â€º</span> Fetching latest 10-K from EDGARâ€¦</div>
+        <div class="term-line"><span class="term-info">â€º</span> Extracted 94,217 words</div>
+        <div class="term-line"><span class="term-info">â€º</span> Splitting into 28 chunksâ€¦</div>
+        <div class="term-line"><span class="term-info">â€º</span> Running Qwen2-0.5B locallyâ€¦</div>
+        <div class="term-line term-success"><span class="term-check">âœ“</span> Sentiment: <strong>Positive</strong> (82% confidence)</div>
+        <div class="term-line term-success"><span class="term-check">âœ“</span> Analysis complete in 48.3s</div>
+        <div class="term-cursor">â–‹</div>
       </div>
     </div>
   </section>
@@ -162,7 +162,7 @@
             <i class="fas fa-search"></i>
           </div>
           <h3>Section Targeting</h3>
-          <p>Focus analysis on specific filing sections — Risk Factors, MD&A, Liquidity — for surgical financial review.</p>
+          <p>Focus analysis on specific filing sections â€” Risk Factors, MD&A, Liquidity â€” for surgical financial review.</p>
           <div class="feature-tag">Precision analysis</div>
         </div>
 
@@ -190,7 +190,7 @@
 
       <div class="analyzer-layout">
 
-        <!-- ── Left Panel: Input ── -->
+        <!-- â”€â”€ Left Panel: Input â”€â”€ -->
         <div class="input-panel">
 
           <!-- Source Toggle -->
@@ -210,7 +210,7 @@
                 <i class="fas fa-cloud-arrow-up"></i>
               </div>
               <p class="drop-title">Drop your SEC filing here</p>
-              <p class="drop-hint">Supports .txt · .html · .htm · Max 50 MB</p>
+              <p class="drop-hint">Supports .txt Â· .html Â· .htm Â· Max 50 MB</p>
               <label class="drop-browse-btn" for="file-input">
                 <i class="fas fa-folder-open"></i> Browse Files
               </label>
@@ -244,9 +244,9 @@
               <label class="field-label">Filing Type</label>
               <div class="select-wrap">
                 <select id="filing-type" class="field-select">
-                  <option value="10-K">10-K — Annual Report</option>
-                  <option value="10-Q">10-Q — Quarterly Report</option>
-                  <option value="8-K">8-K — Current Report</option>
+                  <option value="10-K">10-K â€” Annual Report</option>
+                  <option value="10-Q">10-Q â€” Quarterly Report</option>
+                  <option value="8-K">8-K â€” Current Report</option>
                 </select>
                 <span class="select-arrow"><i class="fas fa-chevron-down"></i></span>
               </div>
@@ -303,7 +303,7 @@
           </div>
         </div>
 
-        <!-- ── Right Panel: Results ── -->
+        <!-- â”€â”€ Right Panel: Results â”€â”€ -->
         <div class="results-panel" id="results-panel">
           <!-- Empty State -->
           <div class="empty-state" id="empty-state">
@@ -319,7 +319,7 @@
               <div class="loading-ring ring-2"></div>
               <div class="loading-ring ring-3"></div>
             </div>
-            <h3 class="loading-title" id="loading-title">Initializing Model…</h3>
+            <h3 class="loading-title" id="loading-title">Initializing Modelâ€¦</h3>
             <p class="loading-sub" id="loading-sub">This may take a moment on first run while Qwen2 loads into memory.</p>
             <div class="loading-steps">
               <div class="load-step" id="lstep-1">
@@ -348,28 +348,28 @@
             <div class="result-card sentiment-hero" id="sentiment-hero-card">
               <div class="sentiment-badge" id="sentiment-badge">
                 <span class="sentiment-icon" id="sentiment-icon"></span>
-                <span class="sentiment-label" id="sentiment-label">—</span>
+                <span class="sentiment-label" id="sentiment-label">â€”</span>
               </div>
               <div class="result-meta">
                 <div class="meta-row">
                   <span class="meta-label">Source</span>
-                  <span class="meta-value" id="res-source">—</span>
+                  <span class="meta-value" id="res-source">â€”</span>
                 </div>
                 <div class="meta-row">
                   <span class="meta-label">Ticker</span>
-                  <span class="meta-value mono" id="res-ticker">—</span>
+                  <span class="meta-value mono" id="res-ticker">â€”</span>
                 </div>
                 <div class="meta-row">
                   <span class="meta-label">Filing Type</span>
-                  <span class="meta-value" id="res-type">—</span>
+                  <span class="meta-value" id="res-type">â€”</span>
                 </div>
                 <div class="meta-row">
                   <span class="meta-label">Words Analyzed</span>
-                  <span class="meta-value mono" id="res-words">—</span>
+                  <span class="meta-value mono" id="res-words">â€”</span>
                 </div>
                 <div class="meta-row">
                   <span class="meta-label">Chunks Processed</span>
-                  <span class="meta-value mono" id="res-chunks">—</span>
+                  <span class="meta-value mono" id="res-chunks">â€”</span>
                 </div>
               </div>
             </div>
@@ -389,10 +389,10 @@
               <div class="card-header-row">
                 <h3 class="card-title"><i class="fas fa-file-contract"></i> Financial Summary</h3>
               </div>
-              <p class="result-explanation" id="res-explanation">—</p>
+              <p class="result-explanation" id="res-explanation">â€”</p>
               <div class="result-summary-box" id="res-summary-box">
                 <span class="summary-label">KEY INSIGHT</span>
-                <p id="res-summary">—</p>
+                <p id="res-summary">â€”</p>
               </div>
               <div id="edgar-link-row" style="display:none; margin-top:1rem;">
                 <a id="edgar-link" href="#" target="_blank" class="edgar-link-btn">
@@ -407,7 +407,7 @@
                 <h3 class="card-title"><i class="fas fa-align-left"></i> Text Preview</h3>
                 <span class="preview-badge">First 800 chars</span>
               </div>
-              <div class="text-preview" id="text-preview">—</div>
+              <div class="text-preview" id="text-preview">â€”</div>
             </div>
 
             <!-- Chunk Breakdown -->
@@ -433,7 +433,7 @@
         <div class="about-text">
           <span class="section-eyebrow">ARCHITECTURE</span>
           <h2 class="section-title">How It Works</h2>
-          <p>FilingLens AI uses a multi-stage pipeline to handle SEC filings that often exceed 200,000 words — far beyond any single LLM context window.</p>
+          <p>FilingLens AI uses a multi-stage pipeline to handle SEC filings that often exceed 200,000 words â€” far beyond any single LLM context window.</p>
           <div class="architecture-steps">
             <div class="arch-step">
               <span class="arch-num">1</span>
@@ -490,11 +490,11 @@
             </div>
             <div class="spec-row">
               <span class="spec-k">Inference</span>
-              <span class="spec-v mono">PyTorch · device_map=auto</span>
+              <span class="spec-v mono">PyTorch Â· device_map=auto</span>
             </div>
             <div class="spec-row">
               <span class="spec-k">Data Policy</span>
-              <span class="spec-v mono">100% local · no cloud</span>
+              <span class="spec-v mono">100% local Â· no cloud</span>
             </div>
           </div>
         </div>
@@ -512,17 +512,18 @@
       <p class="footer-copy">Built for financial professionals. Powered by open-source AI. Your data never leaves your machine.</p>
       <div class="footer-links">
         <span>Qwen2-0.5B-Instruct</span>
-        <span>·</span>
+        <span>Â·</span>
         <span>HuggingFace Transformers</span>
-        <span>·</span>
+        <span>Â·</span>
         <span>SEC EDGAR API</span>
-        <span>·</span>
+        <span>Â·</span>
         <span>Flask</span>
       </div>
     </div>
   </footer>
 
-  <script src="assets/script.js"></script>
+  <script src="static/script.js"></script>
 </body>
 </html>
+
 
